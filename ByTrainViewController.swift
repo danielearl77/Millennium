@@ -14,7 +14,7 @@ class ByTrainViewController: UIViewController {
     @IBOutlet weak var AdViewByTrain: GADBannerView!
     
     override func viewDidLoad() {
-        AdViewByTrain.adUnitID = "ca-app-pub-1798485712270431/7408911492" 
+        AdViewByTrain.adUnitID = "ca-app-pub-xxx/xxx" 
         AdViewByTrain.rootViewController = self
         AdViewByTrain.load(GADRequest())
         super.viewDidLoad()
