@@ -14,7 +14,7 @@ class ByRoadViewController: UIViewController {
     @IBOutlet weak var AdViewByRoad: GADBannerView!
     
     override func viewDidLoad() {
-        AdViewByRoad.adUnitID = "ca-app-pub-1798485712270431/7408911492" 
+        AdViewByRoad.adUnitID = "ca-app-pub-xxx/xxx" 
         AdViewByRoad.rootViewController = self
         AdViewByRoad.load(GADRequest())
         super.viewDidLoad()
