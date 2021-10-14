@@ -7,16 +7,14 @@
 //
 
 import UIKit
-import GoogleMobileAds
+
 
 class FoodDrinkViewController: UIViewController {
 
-    @IBOutlet weak var AdViewFoodDrink: GADBannerView!
+   
     
     override func viewDidLoad() {
-        AdViewFoodDrink.adUnitID = "ca-app-pub-xxx/xxx" 
-        AdViewFoodDrink.rootViewController = self
-        AdViewFoodDrink.load(GADRequest())
+       
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
