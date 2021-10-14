@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dmk-v2-VF1">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="4WN-eL-Fre">
-                                <rect key="frame" x="16" y="64" width="288" height="484"/>
+                                <rect key="frame" x="16" y="20" width="288" height="528"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">This app aims to provide travel information for fans travelling to events at the Millennium Stadium.
     
@@ -92,7 +91,7 @@ Another option is to park in Newport or Bridgend and get the train into Cardiff.
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sU-Bp-wS6">
-                                <rect key="frame" x="60" y="64" width="200" height="45"/>
+                                <rect key="frame" x="60" y="20" width="200" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="DdW-YK-3sS"/>
@@ -101,12 +100,9 @@ Another option is to park in Newport or Bridgend and get the train into Cardiff.
                                 <state key="normal" title="By Road">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="0c3-mL-T45" kind="show" id="oX2-6G-7Hd"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jg-Zr-usX">
-                                <rect key="frame" x="60" y="279" width="200" height="45"/>
+                                <rect key="frame" x="60" y="235" width="200" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Dk8-wH-ogK"/>
@@ -115,12 +111,9 @@ Another option is to park in Newport or Bridgend and get the train into Cardiff.
                                 <state key="normal" title="Food &amp; Drink">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="GDA-BQ-bxF" kind="show" id="a4T-SM-lcc"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrN-7z-kOX">
-                                <rect key="frame" x="60" y="334" width="200" height="45"/>
+                                <rect key="frame" x="60" y="290" width="200" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="lmb-9Q-GRy"/>
@@ -129,12 +122,9 @@ Another option is to park in Newport or Bridgend and get the train into Cardiff.
                                 <state key="normal" title="Stadium Info">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ifg-Lg-Yhb" kind="show" id="Y6Y-ga-CT4"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddZ-4g-cyk">
-                                <rect key="frame" x="60" y="119" width="200" height="45"/>
+                                <rect key="frame" x="60" y="75" width="200" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="OfI-Qf-8xQ"/>
@@ -143,12 +133,9 @@ Another option is to park in Newport or Bridgend and get the train into Cardiff.
                                 <state key="normal" title="By Train">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Hhl-gr-4uB" kind="show" id="tCE-6M-fTM"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlp-oN-TcO">
-                                <rect key="frame" x="60" y="174" width="200" height="45"/>
+                                <rect key="frame" x="60" y="130" width="200" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="AjK-fB-Mu5"/>
@@ -157,9 +144,6 @@ Another option is to park in Newport or Bridgend and get the train into Cardiff.
                                 <state key="normal" title="Map">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Pof-rO-X6c" kind="show" id="Xi5-BZ-hRZ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -188,11 +172,7 @@ Another option is to park in Newport or Bridgend and get the train into Cardiff.
                     </view>
                     <navigationItem key="navigationItem" title="Millennium Stadium Guide" id="HfF-7A-WWM">
                         <barButtonItem key="backBarButtonItem" title="Back" id="gGC-MO-400"/>
-                        <barButtonItem key="rightBarButtonItem" title="About" id="uFI-Ey-2FY">
-                            <connections>
-                                <segue destination="7Xk-Zl-QG7" kind="show" id="FFq-xm-qBd"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="About" id="uFI-Ey-2FY"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -239,7 +219,7 @@ For the North End, turn right on Wood Street and then left into Westgate Street,
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oT6-99-Dyj">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -302,7 +282,7 @@ For the North End, turn right on Wood Street and then left into Westgate Street,
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sf2-eL-bNZ">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uMQ-qk-UXP"/>
@@ -356,10 +336,9 @@ Alcohol is also available inside the stadium.</string>
         <!--Navigation Controller-->
         <scene sceneID="EWS-Hk-meG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dmk-v2-VF1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dmk-v2-VF1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xDt-gx-k6R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.63529411759999999" green="0.76470588240000004" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </navigationBar>
