@@ -50,4 +50,9 @@ class StadiumInfoViewController: UIViewController, WKUIDelegate, WKNavigationDel
         errorText.text = "Error Loading Page"
         loadingSpinner.isHidden = true
     }
+    
+    @IBAction func backBtn(_ sender: Any) {
+        performSegue(withIdentifier: "backToHome", sender: self)
+    }
+    
 }

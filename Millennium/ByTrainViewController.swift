@@ -18,4 +18,13 @@ class ByTrainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func backBtn(_ sender: Any) {
+        performSegue(withIdentifier: "backToHome", sender: self)
+    }
+    
+    @IBAction func navBackToTrain( _ seg: UIStoryboardSegue) {
+        NSLog("Unwind")
+    }
+    
 }
