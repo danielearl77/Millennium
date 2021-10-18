@@ -692,15 +692,18 @@ For the North End, turn right on Wood Street and then left into Westgate Street,
                                 <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="capsule">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="browserBack:" destination="luW-Bx-tQS" eventType="touchUpInside" id="rX3-Qq-0PY"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUY-8R-Tnl">
                                 <rect key="frame" x="0.0" y="94" width="428" height="728"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Jyk-RD-qdX">
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Jyk-RD-qdX">
                                         <rect key="frame" x="195.66666666666666" y="345.66666666666669" width="37" height="37"/>
                                         <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </activityIndicatorView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gof-Qw-WFy">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gof-Qw-WFy">
                                         <rect key="frame" x="179.66666666666666" y="353.66666666666669" width="68.666666666666657" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -736,6 +739,11 @@ For the North End, turn right on Wood Street and then left into Westgate Street,
                     </view>
                     <navigationItem key="navigationItem" id="ozc-RZ-e5G"/>
                     <connections>
+                        <outlet property="browserBackBtn" destination="Qzh-S9-IAV" id="AQz-Kq-s63"/>
+                        <outlet property="errorMsg" destination="gof-Qw-WFy" id="d28-l1-XRN"/>
+                        <outlet property="errorView" destination="KUY-8R-Tnl" id="mIa-0u-5ZC"/>
+                        <outlet property="loadingSpinner" destination="Jyk-RD-qdX" id="5ld-jM-XbW"/>
+                        <outlet property="webView" destination="VOA-sZ-dDu" id="h6v-gf-MdT"/>
                         <segue destination="QCa-Ko-FGX" kind="unwind" identifier="backToTrain" unwindAction="navBackToTrain:" id="W39-Hd-Ohw"/>
                     </connections>
                 </viewController>
