@@ -7,9 +7,39 @@
 //
 
 import UIKit
+import StoreKit
 
 class SupportUsViewController: UIViewController {
 
+    @IBOutlet weak var ProductTitle: UILabel!
+    @IBOutlet weak var ProductDetail: UILabel!
+    @IBOutlet weak var ProductPrice: UILabel!
+    @IBOutlet weak var ProductPurchaseBtn: UIButton!
+    @IBOutlet weak var IAPLoadingView: UIView!
+    
+    let kTipCount = "countOfTipsGiven"
+    let tipLimit = 3
+    var products = [SKProduct]()
+    
+    // MARK: - Functions
+    func getNumberOfTipsGiven() -> Int {
+        let userDefaults: UserDefaults = UserDefaults.standard
+        return userDefaults.integer(forKey: kTipCount)
+    }
+    
+    func updateNumberOfTipsGiven() {
+        let userDefaults: UserDefaults = UserDefaults.standard
+        let count = userDefaults.integer(forKey: kTipCount)
+        let update = count + 1
+        userDefaults.set(update, forKey: kTipCount)
+        
+        if update >= tipLimit {
+            ProductPurchaseBtn.isEnabled = false
+        }
+        
+    }
+    
+    // MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
