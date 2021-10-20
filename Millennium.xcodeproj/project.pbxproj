@@ -10,6 +10,8 @@
 		14114C5C271C8CBF00000108 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14114C5B271C8CBF00000108 /* AboutViewController.swift */; };
 		14114C5E271C8CCD00000108 /* SupportUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14114C5D271C8CCD00000108 /* SupportUsViewController.swift */; };
 		14114C60271C8CE300000108 /* LiveTrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14114C5F271C8CE300000108 /* LiveTrainViewController.swift */; };
+		1474F7CD271FF90400A52735 /* ProductIds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1474F7CC271FF90400A52735 /* ProductIds.plist */; };
+		1474F7CF271FFA9D00A52735 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1474F7CE271FFA9D00A52735 /* IAPManager.swift */; };
 		14E9134921EBAF2B0000AB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9134821EBAF2B0000AB48 /* AppDelegate.swift */; };
 		14E9134B21EBAF2B0000AB48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9134A21EBAF2B0000AB48 /* ViewController.swift */; };
 		14E9134E21EBAF2B0000AB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E9134C21EBAF2B0000AB48 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		14114C5B271C8CBF00000108 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		14114C5D271C8CCD00000108 /* SupportUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportUsViewController.swift; sourceTree = "<group>"; };
 		14114C5F271C8CE300000108 /* LiveTrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTrainViewController.swift; sourceTree = "<group>"; };
+		1474F7CC271FF90400A52735 /* ProductIds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductIds.plist; sourceTree = "<group>"; };
+		1474F7CE271FFA9D00A52735 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		14E9134521EBAF2B0000AB48 /* Millennium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Millennium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E9134821EBAF2B0000AB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E9134A21EBAF2B0000AB48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,9 +87,11 @@
 		14E9134721EBAF2B0000AB48 /* Millennium */ = {
 			isa = PBXGroup;
 			children = (
+				1474F7CC271FF90400A52735 /* ProductIds.plist */,
 				14E9134821EBAF2B0000AB48 /* AppDelegate.swift */,
 				14E9134A21EBAF2B0000AB48 /* ViewController.swift */,
 				14E9134C21EBAF2B0000AB48 /* Main.storyboard */,
+				1474F7CE271FFA9D00A52735 /* IAPManager.swift */,
 				14114C5F271C8CE300000108 /* LiveTrainViewController.swift */,
 				14114C5B271C8CBF00000108 /* AboutViewController.swift */,
 				14114C5D271C8CCD00000108 /* SupportUsViewController.swift */,
@@ -173,6 +179,7 @@
 			files = (
 				14E9135321EBAF2E0000AB48 /* LaunchScreen.storyboard in Resources */,
 				14E9135021EBAF2E0000AB48 /* Assets.xcassets in Resources */,
+				1474F7CD271FF90400A52735 /* ProductIds.plist in Resources */,
 				14E9134E21EBAF2B0000AB48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +193,7 @@
 			files = (
 				14E9134B21EBAF2B0000AB48 /* ViewController.swift in Sources */,
 				52C422A921EE53AE001F08E9 /* ByRoadViewController.swift in Sources */,
+				1474F7CF271FFA9D00A52735 /* IAPManager.swift in Sources */,
 				52C422AB21EE53C1001F08E9 /* ByTrainViewController.swift in Sources */,
 				14114C5E271C8CCD00000108 /* SupportUsViewController.swift in Sources */,
 				52C422AD21EE53C9001F08E9 /* MapViewController.swift in Sources */,

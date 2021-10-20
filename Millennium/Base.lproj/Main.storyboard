@@ -76,6 +76,9 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Send Tip"/>
+                                <connections>
+                                    <action selector="purchaseTip:" destination="fQZ-1X-Q67" eventType="touchUpInside" id="ycn-rt-7EV"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nje-j7-XIu">
                                 <rect key="frame" x="170" y="390.66666666666669" width="88" height="17"/>
