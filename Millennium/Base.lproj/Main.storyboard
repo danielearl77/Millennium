@@ -240,6 +240,7 @@ For more information see our website www.phone-app.co.uk
                     </view>
                     <navigationItem key="navigationItem" id="aAP-Ps-mnP"/>
                     <connections>
+                        <outlet property="aboutTextBox" destination="4WN-eL-Fre" id="dHR-1T-14P"/>
                         <segue destination="BJ0-MW-caj" kind="unwind" identifier="backToHome" unwindAction="navBackToHome:" id="HUn-SG-cTP"/>
                     </connections>
                 </viewController>
@@ -814,7 +815,7 @@ For the North End, turn right on Wood Street and then left into Westgate Street,
                                         <rect key="frame" x="195.66666666666666" y="380.66666666666669" width="37" height="37"/>
                                         <color key="color" systemColor="labelColor"/>
                                     </activityIndicatorView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5J-H1-Uld">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5J-H1-Uld">
                                         <rect key="frame" x="179.66666666666666" y="388.66666666666669" width="69" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>

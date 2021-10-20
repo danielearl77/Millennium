@@ -18,6 +18,7 @@ class LiveTrainViewController: UIViewController, WKUIDelegate, WKNavigationDeleg
     @IBOutlet weak var errorMsg: UILabel!
     
     func loadStationData() {
+        errorMsg.isHidden = true
         let stationURL = "https://m.nationalrail.co.uk/pj/ldbboard/dep/CDF"
         let myURL = URL(string: stationURL)
         let myRequest = URLRequest(url: myURL!)
@@ -40,6 +41,7 @@ class LiveTrainViewController: UIViewController, WKUIDelegate, WKNavigationDeleg
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
         errorMsg.text = "Error Loading Page"
+        errorMsg.isHidden = false
         loadingSpinner.isHidden = true
     }
     
@@ -47,6 +49,7 @@ class LiveTrainViewController: UIViewController, WKUIDelegate, WKNavigationDeleg
                  didFail navigation: WKNavigation!,
                  withError error: Error) {
         errorMsg.text = "Error Loading Page"
+        errorMsg.isHidden = false
         loadingSpinner.isHidden = true
     }
     

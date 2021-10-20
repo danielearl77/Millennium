@@ -10,7 +10,14 @@ import UIKit
 import StoreKit
 
 class ViewController: UIViewController {
-      
+    
+    /*
+     *  Full App Test
+     *  Full IAP Test
+     *  IPAD Verison Test
+     */
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -19,6 +26,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func navBackToHome( _ seg: UIStoryboardSegue) {
-        NSLog("Unwind")
+        //NSLog("Unwind")
     }
 }

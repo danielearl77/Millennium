@@ -18,7 +18,7 @@ class StadiumInfoViewController: UIViewController, WKUIDelegate, WKNavigationDel
     
     
     func loadStadiumInfo() {
-        errorText.text = "Loading..."
+        errorText.isHidden = true
         let fixturesURL = "http://en.wikipedia.org/wiki/Millennium_Stadium"
         let myURL = URL(string: fixturesURL)
         let myRequest = URLRequest(url: myURL!)
@@ -41,13 +41,16 @@ class StadiumInfoViewController: UIViewController, WKUIDelegate, WKNavigationDel
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
         errorText.text = "Error Loading Page"
+        errorText.isHidden = false
         loadingSpinner.isHidden = true
+        
     }
     
     func webView(_ webView: WKWebView,
                  didFail navigation: WKNavigation!,
                  withError error: Error) {
         errorText.text = "Error Loading Page"
+        errorText.isHidden = false
         loadingSpinner.isHidden = true
     }
     

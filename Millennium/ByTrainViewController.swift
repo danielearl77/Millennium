@@ -24,7 +24,7 @@ class ByTrainViewController: UIViewController {
     }
     
     @IBAction func navBackToTrain( _ seg: UIStoryboardSegue) {
-        NSLog("Unwind")
+        //NSLog("Unwind")
     }
     
 }
