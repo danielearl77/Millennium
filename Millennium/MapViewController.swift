@@ -32,6 +32,7 @@ class MapViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - Navigation
     @IBAction func backBtn(_ sender: Any) {
         performSegue(withIdentifier: "backToHome", sender: self)
     }

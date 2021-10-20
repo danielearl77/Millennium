@@ -162,15 +162,6 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="4WN-eL-Fre">
                                 <rect key="frame" x="20" y="174" width="388" height="728"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">This app aims to provide travel information for fans travelling to events at the Millennium Stadium.
-    
-All directions given in this app are taken from either maps or personal experience.  Please contact us if you think the directions are wrong or can provide clearer routes to the stadium.
-
-This app is not affiliated with the Millennium Stadium or the Welsh Rugby Union, and neither has provided any information for this app.  Stadium Infomation is linked from the www.wikipedia.org website.
-
-For more information see our website www.phone-app.co.uk
-
-©2013-2019. Version 3.0</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -582,7 +573,7 @@ Another option is to park in Newport or Bridgend and get the train into Cardiff.
                                 <constraints>
                                     <constraint firstAttribute="height" constant="190" id="Q1G-q5-9iO"/>
                                 </constraints>
-                                <string key="text">The nearest Station is Cardiff Central, about a five minute walk away from the stadium.  Exit the station on the North side and head towards Wood Street, this is the South End of the stadium.
+                                <string key="text">The nearest Station is Cardiff Central, about a five-minute walk away from the stadium.  Exit the station on the North side and head towards Wood Street, this is the South End of the stadium.
 
 For the North End, turn right on Wood Street and then left into Westgate Street, the north end of the stadium is at the end of Westgate Street.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

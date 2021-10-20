@@ -11,17 +11,8 @@ import StoreKit
 
 class ViewController: UIViewController {
     
-    /*
-     *  Full App Test
-     *  Full IAP Test
-     *  IPAD Verison Test
-     */
-    
-    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-      
         // Do any additional setup after loading the view, typically from a nib.
     }
     

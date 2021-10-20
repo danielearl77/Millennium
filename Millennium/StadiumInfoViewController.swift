@@ -16,7 +16,6 @@ class StadiumInfoViewController: UIViewController, WKUIDelegate, WKNavigationDel
     @IBOutlet weak var errorText: UILabel!
     @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
     
-    
     func loadStadiumInfo() {
         errorText.isHidden = true
         let fixturesURL = "http://en.wikipedia.org/wiki/Millennium_Stadium"
@@ -54,6 +53,7 @@ class StadiumInfoViewController: UIViewController, WKUIDelegate, WKNavigationDel
         loadingSpinner.isHidden = true
     }
     
+    // MARK: - Navigation
     @IBAction func backBtn(_ sender: Any) {
         performSegue(withIdentifier: "backToHome", sender: self)
     }

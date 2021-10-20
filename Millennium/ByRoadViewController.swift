@@ -8,17 +8,14 @@
 
 import UIKit
 
-
 class ByRoadViewController: UIViewController {
 
-   
-    
     override func viewDidLoad() {
-      
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - Navigation
     @IBAction func backBtn(_ sender: Any) {
         performSegue(withIdentifier: "backToHome", sender: self)
     }
