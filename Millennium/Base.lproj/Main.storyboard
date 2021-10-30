@@ -332,8 +332,8 @@ Another option is to park in Newport or Bridgend and get the train into Cardiff.
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJl-VP-W6f">
                                 <rect key="frame" x="0.0" y="44" width="428" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hampden Park Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAm-uT-I6Z">
-                                        <rect key="frame" x="93.666666666666671" y="11" width="240.66666666666663" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Millennium Stadium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAm-uT-I6Z">
+                                        <rect key="frame" x="105.00000000000001" y="11" width="218.33333333333337" height="28"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

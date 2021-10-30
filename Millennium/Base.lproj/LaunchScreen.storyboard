@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,17 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImg" translatesAutoresizingMaskIntoConstraints="NO" id="AAf-dd-G5P">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundImg" translatesAutoresizingMaskIntoConstraints="NO" id="AAf-dd-G5P">
                                 <rect key="frame" x="0.0" y="44" width="428" height="882"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1s4-uD-T4e">
+                                <rect key="frame" x="0.0" y="44" width="428" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Millennium Stadium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e32-s6-2eW">
+                                        <rect key="frame" x="104.66666666666669" y="11" width="219" height="28"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUU-p2-PFk">
+                                        <rect key="frame" x="364" y="3" width="54" height="44"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="aboutIcon">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="15j-nf-4Hm"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="15j-nf-4Hm" firstAttribute="trailing" secondItem="MUU-p2-PFk" secondAttribute="trailing" constant="10" id="1jr-Lz-zyZ"/>
+                                    <constraint firstItem="e32-s6-2eW" firstAttribute="centerY" secondItem="1s4-uD-T4e" secondAttribute="centerY" id="YYg-Dg-2Kf"/>
+                                    <constraint firstItem="MUU-p2-PFk" firstAttribute="centerY" secondItem="1s4-uD-T4e" secondAttribute="centerY" id="eLu-Q9-mg1"/>
+                                    <constraint firstAttribute="height" constant="50" id="tyg-tG-0ZV"/>
+                                    <constraint firstItem="e32-s6-2eW" firstAttribute="centerX" secondItem="1s4-uD-T4e" secondAttribute="centerX" id="vpn-hx-kUR"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="AAf-dd-G5P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0tN-od-5m2"/>
-                            <constraint firstItem="AAf-dd-G5P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hmi-GW-zie"/>
-                            <constraint firstItem="AAf-dd-G5P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rl8-Qy-JWn"/>
-                            <constraint firstAttribute="bottom" secondItem="AAf-dd-G5P" secondAttribute="bottom" id="zi4-zh-ybM"/>
+                            <constraint firstItem="1s4-uD-T4e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LRv-aE-BhT"/>
+                            <constraint firstItem="1s4-uD-T4e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bGC-M0-ZWL"/>
+                            <constraint firstItem="1s4-uD-T4e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sj0-CS-Kcp"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -35,6 +62,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="aboutIcon" width="30" height="30"/>
         <image name="backgroundImg" width="1472" height="2208"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
